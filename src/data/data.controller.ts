@@ -16,9 +16,9 @@ export class DataController {
         @Param('inter') inter:number
 
     ){
-        console.log('Solicitud Recibida')
+        //console.log('Solicitud Recibida')
         const [eventos,usuarios] = await this.dataService.getFilter(idCom,idUrs,fechas,inter)
-        console.log('Solicitud Finalizada')
+        //console.log('Solicitud Finalizada')
         return {
             eventos,
             usuarios
